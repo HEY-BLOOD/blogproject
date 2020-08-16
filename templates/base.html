@@ -11,15 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
-    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
     <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}">
     <link href="https://cdn.bootcss.com/highlight.js/9.15.8/styles/github.min.css" rel="stylesheet">
 
     <!-- js -->
-    <script src="{% static 'blog/js/jquery-2.1.3.min.js' %}"></script>
-    <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{% static 'blog/js/pace.min.js' %}"></script>
     <script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
     <style>
@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-5 col-xs-8">
                     <div class="logo">
-                        <h1><a href="index.html"><b>Black</b> &amp; White</a></h1>
+                        <h1><a href="{% url 'blog:index' %}"><b>Black</b> &amp; White</a></h1>
                     </div>
                 </div><!-- col-md-4 -->
                 <div class="col-md-8 col-sm-7 col-xs-4">
@@ -74,7 +74,7 @@
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
+                                <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="首页">首页</a></li>
                                 <li class="cl-effect-11"><a href="full-width.html" data-hover="博客">博客</a></li>
                                 <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
                                 <li class="cl-effect-11"><a href="contact.html" data-hover="联系">联系</a></li>
@@ -96,7 +96,8 @@
         {% if messages %}
         {% for message in messages %}
         <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
             {{ message }}
         </div>
         {% endfor %}

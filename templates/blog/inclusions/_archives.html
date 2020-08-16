@@ -7,6 +7,8 @@
                 {{ date.year }} 年 {{ date.month }} 月
             </a>
         </li>
+        {% empty %}
+        暂无归档！
         {% endfor %}
     </ul>
 </div>

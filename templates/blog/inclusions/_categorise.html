@@ -5,6 +5,8 @@
         <li>
             <a href="{% url 'blog:category' category.pk %}">{{ category.name }}</a>
         </li>
+        {% empty %}
+        暂无分类！
         {% endfor %}
     </ul>
 </div>

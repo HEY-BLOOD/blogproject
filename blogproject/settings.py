@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'tm-!(a*xq)u8)u4=sd&hks&b8m1+)dbpi293j3!48+j3%k5d-6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -107,8 +107,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'zh-hans'
 
-# TIME_ZONE = 'Asia/Shanghai'
-TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
