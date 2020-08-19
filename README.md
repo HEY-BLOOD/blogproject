@@ -9,16 +9,15 @@ Exercise [HelloDjango - Django博客教程（第二版）](https://www.zmrenwu.c
 clone:
 
 ```bash
-$ git clone https://github.com/HEY-BLOOD/watchlist.git
-$ cd blogproject
+$ git clone https://github.com/HEY-BLOOD/django-blogproject.git
+$ cd django-blogproject
 ```
 
 create & active virtual environment then install dependencies:
 
 ```bash
-$ python -m venv env
+$ python -m venv env  # use `virtualenv env` for Python2, use `python3 ...` for Python3 on Linux & macOS
 $ source env/bin/activate  # use `env\Scripts\activate` on Windows
-$ pip install --upgrade pip
 $ pip install -r requirements.txt
 ```
 
@@ -34,10 +33,8 @@ $ python manage.py createsuperuser
 run by default:
 
 ```bash
-$ python manage.py runserver
+$ python manage.py runserver 0.0.0.0:8000
 ```
 
-## Access
-
-access url http://127.0.0.1:8000 in a browser
+access http://127.0.0.1:8000 in a browser
 
