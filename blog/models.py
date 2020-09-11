@@ -55,6 +55,12 @@ class Post(models.Model):
     author = models.ForeignKey(User,
                                verbose_name='作者',
                                on_delete=models.CASCADE)
+    # 新增 views 字段记录阅读量，该类型的值只允许为正整数或 0，不可通过后台编辑
+    views = models.PositiveIntegerField(default=0, editable=False)
+
+    def increase_views(self):
+        self.views += 1
+        self.save(update_fields=['views'])  # 只更新views字段，提高效率
 
     class Meta:
         verbose_name = '文章'
