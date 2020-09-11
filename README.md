@@ -2,7 +2,7 @@
 
  Based on the Python 3.6.x
 
-Exercise [HelloDjango - Django博客教程（第二版）](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/)  from [追梦人物的博客](https://www.zmrenwu.com/)
+Learn [HelloDjango - Django博客教程（第二版）](https://www.zmrenwu.com/courses/hellodjango-blog-tutorial/)  from [追梦人物的博客](https://www.zmrenwu.com/)
 
 ## Installation
 
