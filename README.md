@@ -21,11 +21,11 @@ $ source env/bin/activate  # use `env\Scripts\activate` on Windows
 $ pip install -r requirements.txt
 ```
 
-migrate database & create superuser:
+migrate database & create virtual data:
 
 ```bash
 $ python manage.py migrate
-$ python manage.py createsuperuser
+$ python -m scripts.fake
 ```
 
 ## Run

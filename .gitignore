@@ -1,0 +1,8 @@
+__pycache__/
+/env
+/venv
+db.sqlite3
+.vscode/
+_credentials.py
+django_secrect_key.txt
+start.sh
