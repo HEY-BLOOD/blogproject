@@ -30,7 +30,7 @@ if __name__ == '__main__':
     User.objects.all().delete()
 
     print('create a blog user')
-    user = User.objects.create_superuser('admin', 'admin@hellogithub.com',
+    user = User.objects.create_superuser('admin', 'admin@example.com',
                                          'admin')
 
     category_list = ['Python学习笔记', '开源项目', '工具资源', '程序员生活感悟', 'test category']
